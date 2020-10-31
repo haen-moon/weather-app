@@ -1,0 +1,88 @@
+body {
+  background-color: #f2f4f7;
+}
+
+dl {
+  display: block;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+}
+
+dd dt {
+  display: inline;
+}
+.card {
+  margin: 20px;
+  position: relative;
+  /* margin-bottom: 16px; */
+  padding: 30px 24px;
+  border-radius: 3px;
+  border-style: solid;
+  border-color: #e6ebef;
+  border-width: 1px 0;
+  background-color: #fff;
+  box-sizing: border-box;
+  box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.03);
+}
+
+.city {
+  text-align: left;
+  font-size: 40px;
+}
+.today_weather {
+  position: relative;
+  margin-top: -22px;
+  text-align: center;
+}
+
+.today_icon {
+  display: inline-block;
+  width: 180px;
+  height: 180px;
+  font-size: 100px;
+  color: #fd7e16;
+  padding: 10px;
+}
+
+.weather_area {
+  position: relative;
+  z-index: 5;
+  margin-top: -58px;
+}
+
+.current_temp {
+  margin-left: 18px;
+  font-size: 68px;
+  font-weight: 700;
+  line-height: 75px;
+  letter-spacing: -0.9px;
+  color: #303030;
+}
+
+.unit {
+  font-size: 46px;
+  font-weight: 700;
+  line-height: 59px;
+  letter-spacing: -1.08px;
+  vertical-align: top;
+}
+
+.summary {
+  margin-top: 4px;
+  font-size: 20px;
+  font-weight: 300;
+  line-height: 31px;
+  letter-spacing: -1px;
+  color: #424242;
+}
+
+.summary_list {
+  margin-top: 4px;
+  font-size: 14px;
+  line-height: 18px;
+  color: #666;
+  letter-spacing: -0.5px;
+  display: inline;
+}

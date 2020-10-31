@@ -1,15 +1,63 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="src/style.css">
-</head>
-<body>
-    <h1>
-        Hello Git
-    </h1>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather App</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
+      crossorigin="anonymous"
+    />
+    <script src="https://kit.fontawesome.com/faa93fb3be.js" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <link rel="stylesheet" href="src/styles.css" />
+  </head>
+  <body>
+    <div class="card">
+      <form class="search_form">
+        <div class="row">
+          <div class="col-8">
+            <input type="text" class="form-control" id="city_input" placeholder="Type a city">
+          </div>
+          <div class="col-2">
+            <button type="submit" class="btn btn-success w-100">Search</button>
+          </div>
+          <div class="col-2">
+            <button type="button" class="btn btn-warning w-100" id ="current-location-button">Current</button>
+          </div>
+        </div>
+      </form>
+    </div>
+    <div class="card">
+      <p class="city" id ="city"></p>
+      <div class="today_weather">
+        <i class="today_icon fas fa-cloud-sun"></i>
+        <div class="weather_area">
+          <strong class="current_temp">
+            <span class="temp" id ="temperature"></span>
+            <span class="unit">
+              <a href="#" id="celsius">ºC</a>|<a href="#" id="fahrenheit">ºF</a>
+            </span>
+          </strong>
+          <div class="summary" id="description">
+          </div>
+          <dl class="summary_list">
+            <dt class="term_wind">Wind</dt>
+            <dd class="desc_wind">
+              <span id ="wind"></span>
+              <span id="wind_unit">km/h</span>
+            </dd>
+            <dt class="term_humidity">Humidity</dt>
+            <dd class="desc_humidity">
+              <span id="humidity"></span>
+              <span id="humidity_unit">%</span>
+            </dd>
+          </dl>
+        </div>
+      </div>
+    </div>
     <script src="src/script.js"></script>
-</body>
+  </body>
 </html>
