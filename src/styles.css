@@ -86,3 +86,8 @@ dd dt {
   letter-spacing: -0.5px;
   display: inline;
 }
+
+.github_source {
+  margin: 20px;
+  font-size: 14px;
+}
